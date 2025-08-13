@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito Sanitário Petrolândia - Contatos Telefônicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        .phone-highlight {
+            color: #059669;
+            font-weight: 600;
+        }
+        
+        .search-container {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+        
+        .table-row:hover {
+            background-color: #f1f5f9;
+        }
+        
+        .hidden-row {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Cabeçalho -->
+    <header class="bg-gray-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="text-center">
+                <h1 class="text-2xl md:text-3xl font-bold mb-2">
+                    <i class="fas fa-hospital-alt mr-2"></i>
+                    DISTRITO SANITÁRIO PETROLÂNDIA
+                </h1>
+                <h2 class="text-lg md:text-xl font-medium mb-4">
+                    <i class="fas fa-phone mr-2"></i>
+                    CONTATOS TELEFÔNICOS
+                </h2>
+            </div>
+            <div class="text-center text-xs text-gray-300 mt-4 border-t border-gray-600 pt-3">
+                <i class="fas fa-user-edit mr-1"></i>
+                PÁGINA CRIADA POR: ANA P. A. SILVA/SUPORTE VIVVER DISTRITO ELDORADO MATR.201704
+            </div>
+        </div>
+    </header>
+
+    <!-- Container Principal -->
+    <div class="container mx-auto px-4 py-6">
+        <!-- Sistema de Pesquisa -->
+        <div class="search-container rounded-lg shadow-md p-6 mb-6">
+            <div class="flex flex-col md:flex-row gap-4 items-center">
+                <div class="flex-1">
+                    <div class="relative">
+                        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="Pesquisar por unidade, telefone ou endereço..."
+                            class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                        >
+                    </div>
+                </div>
+                <button 
+                    onclick="clearSearch()" 
+                    class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition-colors duration-200 flex items-center"
+                >
+                    <i class="fas fa-times mr-2"></i>
+                    Limpar Pesquisa
+                </button>
+            </div>
+        </div>
+
+        <!-- Tabela de Contatos -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="px-4 py-4 text-left font-semibold">
+                                <i class="fas fa-building mr-2"></i>
+                                UNIDADES
+                            </th>
+                            <th class="px-4 py-4 text-left font-semibold">
+                                <i class="fas fa-phone mr-2"></i>
+                                TELEFONES
+                            </th>
+                            <th class="px-4 py-4 text-left font-semibold">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                ENDEREÇOS
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactsTable" class="divide-y divide-gray-200">
+                        <tr class="table-row">
+                            <td class="px-4 py-4 font-medium text-gray-900">DISTRITO PETROLÂNDIA</td>
+                            <td class="px-4 py-4 phone-highlight">3353-7529 / 3397-7836</td>
+                            <td class="px-4 py-4 text-gray-700">REFINARIA GABRIEL PASSOS, 287 - PETROLÂNDIA</td>
+                        </tr>
+                        <tr class="table-row bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">UBS PETROLÂNDIA I</td>
+                            <td class="px-4 py-4 phone-highlight">99257-2537</td>
+                            <td class="px-4 py-4 text-gray-700">RUA BENZINA, 14 - PETROLÂNDIA</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-4 py-4 font-medium text-gray-900">FARMÁCIA DISTRITAL PETROLÂNDIA</td>
+                            <td class="px-4 py-4 phone-highlight">3352-5744</td>
+                            <td class="px-4 py-4 text-gray-700">RUA REFINARIA MANGUINHOS, 811 - PETROLÂNDIA</td>
+                        </tr>
+                        <tr class="table-row bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">UNIDADE BÁSICA DE SAÚDE DUQUE DE CAXIAS</td>
+                            <td class="px-4 py-4 phone-highlight">99257-2430</td>
+                            <td class="px-4 py-4 text-gray-700">RUA REFINARIA DUQUE DE CAXIAS, 297 - PETROLÂNDIA</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-4 py-4 font-medium text-gray-900">SÃO LUIZ I</td>
+                            <td class="px-4 py-4 phone-highlight">3352-3697 / 99257-2376</td>
+                            <td class="px-4 py-4 text-gray-700">RUA ITUNTINGA, Nº 242 - INDUSTRIAL SÃO LUIZ</td>
+                        </tr>
+                        <tr class="table-row bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">SÃO LUIZ II</td>
+                            <td class="px-4 py-4 phone-highlight">99952-5783</td>
+                            <td class="px-4 py-4 text-gray-700">RUA MADEIRÃO, 282 A - SÃO LUIZ</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-4 py-4 font-medium text-gray-900">SAPUCAIAS I E II (EQUIPES INTEGRADAS)</td>
+                            <td class="px-4 py-4 phone-highlight">3397-8120 / 99257-2431</td>
+                            <td class="px-4 py-4 text-gray-700">RUA AMAZONITA, Nº 230 - SAPUCAIAS</td>
+                        </tr>
+                        <tr class="table-row bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">CAMPO ALTO / TROPICAL I (EQUIPES INTEGRADAS)</td>
+                            <td class="px-4 py-4 phone-highlight">3391-8888</td>
+                            <td class="px-4 py-4 text-gray-700">AVENIDA TROPICAL, 1012 - TROPICAL</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-4 py-4 font-medium text-gray-900">USF ESTÂNCIAS IMPERIAIS</td>
+                            <td class="px-4 py-4 phone-highlight">3352-8660</td>
+                            <td class="px-4 py-4 text-gray-700">AVENIDA DOS TECLADOS, 1037 - ESTÂNCIAS IMPERIAIS</td>
+                        </tr>
+                        <tr class="table-row bg-gray-50">
+                            <td class="px-4 py-4 font-medium text-gray-900">USF NASCENTES IMPERIAIS</td>
+                            <td class="px-4 py-4 phone-highlight">3911-3701</td>
+                            <td class="px-4 py-4 text-gray-700">RUA OITENTA E UM, 16 - TROPICAL</td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="px-4 py-4 font-medium text-gray-900">TROPICAL II</td>
+                            <td class="px-4 py-4 phone-highlight">3352-5784 / 99257-1524</td>
+                            <td class="px-4 py-4 text-gray-700">AVENIDA DURVAL ALVES DE FARIA, 1915 - TROPICAL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Informações adicionais -->
+        <div class="mt-6 text-center text-gray-600">
+            <p class="text-sm">
+                <i class="fas fa-info-circle mr-1"></i>
+                Total de unidades cadastradas: <span id="totalUnits" class="font-semibold">11</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const tableRows = document.querySelectorAll('.table-row');
+        const totalUnitsSpan = document.getElementById('totalUnits');
+
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            tableRows.forEach(row => {
+                const cells = row.querySelectorAll('td');
+                const rowText = Array.from(cells).map(cell => cell.textContent.toLowerCase()).join(' ');
+                
+                if (searchTerm === '' || rowText.includes(searchTerm)) {
+                    row.classList.remove('hidden-row');
+                    visibleCount++;
+                } else {
+                    row.classList.add('hidden-row');
+                }
+            });
+
+            totalUnitsSpan.textContent = visibleCount;
+        }
+
+        function clearSearch() {
+            searchInput.value = '';
+            tableRows.forEach(row => {
+                row.classList.remove('hidden-row');
+            });
+            totalUnitsSpan.textContent = tableRows.length;
+            searchInput.focus();
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', performSearch);
+        searchInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', function() {
+            searchInput.focus();
+        });
+    </script>
+</body>
+</html>
