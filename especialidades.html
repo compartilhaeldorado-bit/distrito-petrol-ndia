@@ -121,22 +121,22 @@
                     >
                 </div>
                 
-                <!-- Filter Buttons -->
+                 <!-- Filter Buttons -->
                 <div class="flex gap-2">
                     <button class="filter-btn active" onclick="filterSpecialties('all')">
                         <i class="fas fa-list mr-2"></i>
                         Todas
-                        <span class="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded-full text-xs">46</span>
+                        <span class="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded-full text-xs">48</span>
                     </button>
                     <button class="filter-btn" onclick="filterSpecialties('low')">
                         <i class="fas fa-arrow-down mr-2"></i>
                         Baixa Demanda
-                        <span class="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded-full text-xs">10</span>
+                        <span class="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded-full text-xs">11</span>
                     </button>
                     <button class="filter-btn" onclick="filterSpecialties('high')">
                         <i class="fas fa-arrow-up mr-2"></i>
                         Alta Demanda
-                        <span class="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded-full text-xs">36</span>
+                        <span class="ml-2 bg-white bg-opacity-20 px-2 py-1 rounded-full text-xs">37</span>
                     </button>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                     <i class="fas fa-chart-bar text-3xl text-blue-600"></i>
                 </div>
                 <h3 class="text-gray-600 font-medium mb-1">Total de Especialidades</h3>
-                <p class="text-3xl font-bold text-gray-800" id="totalCount">46</p>
+                <p class="text-3xl font-bold text-gray-800" id="totalCount">48</p>
             </div>
             
             <div class="stats-card low-demand rounded-xl p-6 text-center">
@@ -157,7 +157,7 @@
                     <i class="fas fa-arrow-down text-3xl text-green-600"></i>
                 </div>
                 <h3 class="text-gray-600 font-medium mb-1">Baixa Demanda</h3>
-                <p class="text-3xl font-bold text-green-700" id="lowDemandCount">10</p>
+                <p class="text-3xl font-bold text-green-700" id="lowDemandCount">11</p>
             </div>
             
             <div class="stats-card high-demand rounded-xl p-6 text-center">
@@ -165,7 +165,7 @@
                     <i class="fas fa-arrow-up text-3xl text-amber-600"></i>
                 </div>
                 <h3 class="text-gray-600 font-medium mb-1">Alta Demanda</h3>
-                <p class="text-3xl font-bold text-amber-700" id="highDemandCount">36</p>
+                <p class="text-3xl font-bold text-amber-700" id="highDemandCount">37</p>
             </div>
         </div>
 
@@ -270,7 +270,7 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    De acordo com o Memorando-SEI Nº. 324/2025, os agendamentos via sistema estão suspensos no momento, gentileza ler o memorando.
+                    De acordo com o Memorando-SEI Nº. 324/2025.
                 </div>
             </div>
 
@@ -286,7 +286,7 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Agendamento realizado por telefone/Contatos: 3058-1597 ou via email: saecontagem@yahoo.com
+                   Aguardar mudanças! Até a elaboração da NT o Agendamento será realizado por telefone/Contatos: 3058-1597 ou via email: saecontagem@yahoo.com
                 </div>
             </div>
 
@@ -306,11 +306,11 @@
                 </div>
             </div>
 
-            <div class="specialty-card low-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="low">
+             <div class="specialty-card low-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="low">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
                         <i class="fas fa-stethoscope mr-2 text-green-600"></i>
-                        PSCOLOGIA
+                        PSCOLOGIA e NUTRIÇÃO
                     </h3>
                     <span class="status-badge low-demand px-3 py-1 rounded-full text-xs font-medium ml-2">
                         Baixa Demanda
@@ -318,23 +318,8 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Paciente deverá pegar encaminhamento com o médico clinico da Unidade de Saúde, para passar por matriciamento pela equipe Emulti e solicitar agendamento.
-                </div>
-            </div>
-
-            <div class="specialty-card low-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="low">
-                <div class="flex items-start justify-between mb-4">
-                    <h3 class="text-lg font-semibold text-gray-800 flex-1">
-                        <i class="fas fa-stethoscope mr-2 text-green-600"></i>
-                        PSIQUIATRIA
-                    </h3>
-                    <span class="status-badge low-demand px-3 py-1 rounded-full text-xs font-medium ml-2">
-                        Baixa Demanda
-                    </span>
-                </div>
-                <div class="text-gray-700 text-sm leading-relaxed">
-                    <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Paciente deverá pegar encaminhamento com o médico clinico da Unidade de Saúde, para passar por matriciamento pela equipe Emulti e solicitar agendamento.
+                    Para consultas de psicologia, a unidade básica de saúde deve inserir a solicitação no sistema com avaliação prévia do caso.
+                    As consultas de nutrição podem ser agendadas diretamente pela unidade básica de saúde quando há disponibilidade de vagas.
                 </div>
             </div>
 
@@ -383,7 +368,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                   Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -399,10 +389,36 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
+             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
+                <div class="flex items-start justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 flex-1">
+                        <i class="fas fa-heartbeat mr-2 text-amber-600"></i>
+                        ASSISTÊNCIA A SAÚDE TRANS E TRAVESTI
+                    </h3>
+                    <span class="status-badge high-demand px-3 py-1 rounded-full text-xs font-medium ml-2">
+                        Alta Demanda
+                    </span>
+                </div>
+                <div class="text-gray-700 text-sm leading-relaxed">
+                    <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
+                </div>
+            </div>
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -415,7 +431,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -431,7 +452,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -447,10 +473,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -463,7 +494,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                    Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -479,7 +515,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -495,10 +536,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -511,10 +557,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -527,10 +578,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -543,7 +599,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -559,7 +620,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                   Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -575,7 +641,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -607,10 +678,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -623,7 +699,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -639,10 +720,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -655,10 +741,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -671,7 +762,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -687,7 +783,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -703,7 +804,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -719,7 +825,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -735,7 +846,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -751,7 +867,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -783,7 +904,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -799,10 +925,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -815,7 +946,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -831,7 +967,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -847,10 +988,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -863,7 +1009,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -879,10 +1030,15 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-
+            
             <div class="specialty-card high-demand bg-white rounded-2xl p-6 shadow-sm border hover:shadow-lg" data-demand="high">
                 <div class="flex items-start justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 flex-1">
@@ -895,7 +1051,12 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                   Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
 
@@ -911,11 +1072,14 @@
                 </div>
                 <div class="text-gray-700 text-sm leading-relaxed">
                     <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                  Encaminhar para a diretoria de regulação - CEAPS/Central de Marcação de Consultas, especialidade deve ser regulada pelo médico regulador, verificar se a guia se encontra lançada no sistema antes de enviar.
+                    Seguir o novo fluxo da NT 025/2025 e NT Conjunta 032. Orientações referente a Teleconsultoria.
+                    
+                     <a href="https://portal.contagem.mg.gov.br/central-de-marcacao-de-consultas/" class="highlight-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Acessar NT 25/2025
+                </a>
                 </div>
             </div>
-        </div>
-
         <!-- Footer -->
         <footer class="text-center mt-12 py-6 border-t border-gray-200">
             <p class="text-gray-600">
@@ -927,7 +1091,7 @@
             </p>
         </footer>
     </div>
-
+        
     <script>
         // Set current date
         document.getElementById('currentDate').textContent = new Date().toLocaleDateString('pt-BR');
